@@ -4,13 +4,16 @@
 
 Este repositório contém uma lista de exercícios de PHP para praticar conceitos fundamentais da linguagem, como variáveis, estruturas de controle, funções e manipulação de dados.
 
-## Como clonar o repositório
+## Como criar uma fork após modificar o repositório (Baixar a lista para seu PC)
 
-OBS.: Lembre-se de baixar o GIT. Você pode clonar usando o GitHub Desktop.
+Se você fez alterações e deseja criar uma fork do repositório usando o GitHub Desktop, siga estes passos:
 
-1. Abra o GitHub Desktop e selecione "File" > "Clone repository".
-2. Escolha o repositório `lista-de-exercicios-PHP` e defina o caminho de destino para a pasta `htdocs` do XAMPP (por exemplo, `C:\xampp\htdocs\lista-de-exercicios-PHP`).
-3. Clique em "Clone".
+1. Acesse o site do GitHub e navegue até o repositório original `lista-de-exercicios-PHP` (<https://github.com/realmarcos/lista-de-exercicios-PHP>).
+2. Clique no botão **Fork** no canto superior direito para criar uma cópia do repositório em sua conta.
+3. Abra o GitHub Desktop e selecione "File" > "Clone repository".
+4. Escolha o repositório `lista-de-exercicios-PHP` e defina o caminho de destino para a pasta `htdocs` do XAMPP (por exemplo, `C:\xampp\htdocs\lista-de-exercicios-PHP`).
+5. Clique em "Clone".
+6. Agora, você pode continuar trabalhando na sua fork.
 
 ## Como resolver os exercícios
 
@@ -19,4 +22,3 @@ OBS.: Lembre-se de baixar o GIT. Você pode clonar usando o GitHub Desktop.
 3. Resolva cada exercício conforme as instruções presentes nos arquivos.
 4. Para testar seus códigos, inicie o XAMPP e certifique-se de que o Apache está rodando.
 5. Visualize os resultados acessando `http://localhost/lista-de-exercicios-PHP` no navegador.
-
