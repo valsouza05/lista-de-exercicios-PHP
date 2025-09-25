@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF--8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial - Exercícios PHP</title>
-    <link rel="stylesheet" href="./../../styles.css">
+    <meta charset="UTF-8">
+    <title>Questão 8 - Ímpares de 1 a 50</title>
 </head>
-
 <body>
+    <h2>Questão 8: Números Ímpares entre 1 e 50</h2>
 
-    <header>
-        <h2>Questão 08: Números Ímpares</h2>
-    </header>
-
-    <main>
-
-    <!-- implementação da solução -->
-     
-    </main>
+    <p>
+        <?php
+        for ($i = 1; $i <= 50; $i += 2) {
+            echo "$i ";
+        }
+        ?>
+    </p>
 </body>
-
-
 </html>
