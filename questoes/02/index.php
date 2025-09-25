@@ -16,21 +16,12 @@
 
     <main>
 
-    <?php 
-
-    function ConverterMetrosCentimetros($metros) {
-        $resultado = $metros * 100;
-        return $resultado;
+   <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $metros = (float) $_POST["metros"];
+        $centimetros = $metros * 100;
+        echo "<p><strong>$metros</strong> metros equivalem a <strong>$centimetros</strong> centímetros.</p>";
     }
-   
-   echo ConverterMetrosCentimetros(99);
-
-    // $distanciaMetros = 100;
-
-    // $x = ConverterMetrosCentimetros(100);
-
-    // echo $x;
-
     ?>
      
     </main>
