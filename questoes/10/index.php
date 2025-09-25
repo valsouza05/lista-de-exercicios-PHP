@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF--8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial - Exercícios PHP</title>
-    <link rel="stylesheet" href="./../../styles.css">
+    <meta charset="UTF-8">
+    <title>Questão 10 - Conversão de Tempo</title>
 </head>
-
 <body>
+    <h2>Questão 10: Conversão de Segundos em Horas, Minutos e Segundos</h2>
 
-    <header>
-        <h2>Questão 10: Calculando as Horas</h2>
-    </header>
+    <form method="post">
+        <label>Tempo total em segundos:</label>
+        <input type="number" name="segundos" required>
+        <button type="submit">Converter</button>
+    </form>
 
-    <main>
-
-    <!-- implementação da solução -->
-     
-    </main>
-</body>
-
-
-</html>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+       
