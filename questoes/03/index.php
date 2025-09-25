@@ -16,7 +16,12 @@
 
     <main>
 
-    <!-- implementação da solução -->
+   <form method="POST" action="resultado.php">
+   <label for="valor_hora">Valor da Hora:</label><br>
+   <input type="number" name="valor_hora" step="0.01"><br>
+   <label for="horas_trabalhadas">Horas Trabalhadas:</label><br>
+   <input type="number" name="horas_trabalhadas"><br>
+   <input type="submit" value="calcular">
      
     </main>
 </body>

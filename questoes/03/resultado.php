@@ -11,26 +11,15 @@
 <body>
 
     <header>
-        <h2>Questão 02: Metros para centimetros</h2>
+        <h2>Resultado das Horas trabalhadas</h2>
     </header>
 
     <main>
+    <?php
+    $valor_hora = $_POST["valor_hora"];
+    $horas_trabalhadas = $_POST["horas_trabalhadas"];
 
-    <?php 
-
-    function ConverterMetrosCentimetros($metros) {
-        $resultado = $metros * 100;
-        return $resultado;
-    }
-   
-   echo ConverterMetrosCentimetros(99);
-
-    // $distanciaMetros = 100;
-
-    // $x = ConverterMetrosCentimetros(100);
-
-    // echo $x;
-
+    echo "Seu salário do mês é R$" . ($valor_hora * $horas_trabalhadas);
     ?>
      
     </main>
