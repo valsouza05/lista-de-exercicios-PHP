@@ -16,11 +16,18 @@
 
     <main>
 
-    <?php
-    $valor = 100;
+    <form method="post">
+        <label for="numero">Digite um número:</label>
+        <input type="number" name="numero" id="numero" required>
+        <button type="submit">Calcular Antecessor</button>
+    </form>
 
-    echo "O antecessor do valor " . $valor . " é " . ($valor - 1) ;
-    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $numero = (int)$_POST["numero"];
+        $antecessor = $numero - 1;
+        echo "<p>O antecessor de <strong>$numero</strong> é <strong>$antecessor</strong>.</p>";
+    }
     ?>
      
     </main>
