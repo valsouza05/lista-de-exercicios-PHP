@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF--8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial - Exercícios PHP</title>
-    <link rel="stylesheet" href="./../../styles.css">
+    <meta charset="UTF-8">
+    <title>Questão 3 - Salário Mensal</title>
 </head>
-
 <body>
+    <h2>Questão 3: Cálculo de Salário Mensal</h2>
 
-    <header>
-        <h2>Questão 03: Horas trabalhadas</h2>
-    </header>
+    <form method="post">
+        <label>Valor por hora (R$):</label>
+        <input type="number" name="valorHora" step="0.01" required><br><br>
 
-    <main>
+        <label>Horas trabalhadas no mês:</label>
+        <input type="number" name="horasMes" required><br><br>
 
-   <form method="POST" action="resultado.php">
-   <label for="valor_hora">Valor da Hora:</label><br>
-   <input type="number" name="valor_hora" step="0.01"><br>
-   <label for="horas_trabalhadas">Horas Trabalhadas:</label><br>
-   <input type="number" name="horas_trabalhadas"><br>
-   <input type="submit" value="calcular">
-     
-    </main>
+        <button type="submit">Calcular Salário</button>
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $valorHora = (float) $_POST["valorHora"];
+        $horasMes = (int) $_POST["horasMes"];
+        $salario = $valorHora * $horasMes;
+
+        echo "<p>Seu salário no mês é <strong>R$ " . number_format($salario, 2, ',', '.') . "</strong></p>";
+    }
+    ?>
 </body>
-
-
 </html>
